@@ -1,0 +1,15 @@
+<input type="checkbox" id="reader-details-modal" class="modal-toggle" [checked]="visible" (change)="close()" />
+<label for="reader-details-modal" class="modal cursor-pointer">
+    <label class="modal-box relative">
+        <h2 class="text-2xl font-bold text-center">Reader</h2>
+        <p><strong>First Name:</strong> {{ reader.firstName }}</p>
+        <p><strong>Last Name:</strong> {{ reader.lastName }}</p>
+        <p><strong>Email:</strong> {{ reader.email }}</p>
+        <p><strong>Phone Number:</strong> {{ reader.phone }}</p>
+        <p><strong>Address:</strong> {{ reader.address }}</p>
+        <p><strong>User ID:</strong> {{ reader.userId }}</p>
+        <div class="modal-action">
+            <label for="reader-details-modal" class="btn btn-accent">Close</label>
+        </div>
+    </label>
+</label>

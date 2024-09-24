@@ -1,0 +1,13 @@
+<input type="checkbox" id="reader-card-details-modal" class="modal-toggle" [checked]="visible" (change)="close()" />
+<label for="reader-card-details-modal" class="modal cursor-pointer">
+    <label class="modal-box relative">
+        <h2 class="text-2xl font-bold text-center">Reader Card</h2>
+        <p><strong>ID:</strong> {{ readerCard.id }}</p>
+        <p><strong>Rent Date:</strong> {{ readerCard.rentDate }}</p>
+        <p><strong>Return Date:</strong> {{ readerCard.returnDate }}</p>
+        <p><strong>Reader ID:</strong> {{ readerCard.readerId }}</p>
+        <div class="modal-action">
+            <label for="reader-card-details-modal" class="btn btn-accent">Close</label>
+        </div>
+    </label>
+</label>
